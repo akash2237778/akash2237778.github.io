@@ -1,16 +1,18 @@
 'use strict';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "1e5f6e376526dadeded56b5c7f4de340",
-"assets/AssetManifest.json": "382cf7209669ebcc9648023630bf06f5",
+  "main.dart.js": "5b355b646555deffe86b872b847aa5fe",
+"assets/AssetManifest.json": "a1377e51ff1ecb6d7e36d36a98cc8b97",
 "assets/FontManifest.json": "01700ba55b08a6141f33e168c4a6c22f",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
+"assets/images/AR.jpg": "f1c9db6d5761087ad6bf1e2d65005a67",
 "assets/images/bg.jpg": "7d4a690b8896b5e1e94872abc5692432",
 "assets/images/github.png": "b8e090c3d4ebf071ebac5f81dafce61c",
 "assets/images/linkedin.png": "ca416ccb7f429e3ca15472ff43c32d13",
 "assets/images/instagram.png": "4d9222ef3dc56dca622ce4662c62f6d1",
 "assets/images/akash.jpg": "0ef66ae2ba659be97b26561c6dcc6ae8",
-"assets/LICENSE": "ac3bc3b40c32772e7882a0fcc1b4c144",
+"assets/images/logomain.png": "ab96f0ca0ed5e066576af34d80333919",
+"assets/LICENSE": "997c6caa0c0e433058cc7d864b04eede",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "manifest.json": "3e43b5df17bda818b4f7bcbcdc786143",
 "icons/Icon-192.jpg": "0ef66ae2ba659be97b26561c6dcc6ae8",

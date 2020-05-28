@@ -20,10 +20,9 @@ class _MyHomePageState extends State<MyHomePage> {
       child: RaisedButton(
         shape: RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(18.0),
-          side: BorderSide(color: Colors.grey),
         ),
-        color: Colors.white,
-        hoverColor: Colors.cyan,
+        color:  Color.fromRGBO(50, 9, 43, .80),
+        hoverColor: Color.fromRGBO(50, 9, 43, 100),
         elevation: 5,
         onPressed: () {},
         child: Column(
@@ -34,13 +33,14 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 'AR Book',
                 style: TextStyle(
-                    fontSize: 60, fontWeight: FontWeight.bold),
+                    fontSize: 50, fontWeight: FontWeight.bold,
+                color: Colors.white),
               ),
             ),
             Expanded(
                 flex: 3,
                 child: Image.network(
-                    'https://cdn3.iconfinder.com/data/icons/augmented-reality/100/augmented_reality_ar_virtual-05-512.png')),
+                    'https://cdn3.iconfinder.com/data/icons/augmented-reality/100/augmented_reality_ar_virtual-05-512.png',)),
             Expanded(
               flex: 3,
               child: Padding(
@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 EdgeInsets.only(top: 15.0, left: 15, right: 15),
                 child: Text(
                   'The sole purpose of this project was to make an Augmented Reality based education system. In this book, 3-D models appear to facilitate a better understanding. Among the most significant trends in EdTech, augmented reality rightfully takes a leading position. With more than 1 billion users expected to join the trend by 2020, it opens a pool of opportunities for educational institutions and businesses.',
-                  style: TextStyle(),
+                  style: TextStyle(color: Colors.white),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -65,11 +65,11 @@ class _MyHomePageState extends State<MyHomePage> {
                           _launchURL(
                               'https://drive.google.com/file/d/14zEUUDlX2sxQngVOWlab_-qy7gidpV-1/view?pli=1');
                         },
-                        color: Colors.black,
+                        color: Colors.white,
                         elevation: 5,
                         child: Text(
                           'Demo Video',
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.black),
                         )),
                   )
                 ],
@@ -84,10 +84,9 @@ class _MyHomePageState extends State<MyHomePage> {
       child: RaisedButton(
         shape: RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(18.0),
-          side: BorderSide(color: Colors.grey),
         ),
-        color: Colors.white,
-        hoverColor: Colors.cyan,
+        color:  Color.fromRGBO(50, 9, 43, .80),
+        hoverColor: Color.fromRGBO(50, 9, 43, 100),
         elevation: 5,
         onPressed: () {},
         child: Column(
@@ -98,7 +97,8 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 'SahYog',
                 style: TextStyle(
-                    fontSize: 60, fontWeight: FontWeight.bold),
+                    fontSize: 50, fontWeight: FontWeight.bold,
+                color: Colors.white),
               ),
             ),
             Expanded(
@@ -112,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 EdgeInsets.only(top: 15.0, left: 15, right: 15),
                 child: Text(
                   'This is an android platform where any verified user can provide or receive any service to make money or to get his/her job done without the involvement of any organization. Platform focuses on creating a self helping culture which can benefit both consumers and providers. A service consumer can act as client for service provider',
-                  style: TextStyle(),
+                  style: TextStyle(color: Colors.white),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -129,7 +129,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         _launchURL(
                             'https://sahayog7778.wixsite.com/sahyog');
                       },
-                      child: Icon(Icons.language),
+                      child: Icon(Icons.language,
+                      color: Colors.white,),
                     ),
                     FlatButton(
                       onPressed: () {
@@ -154,10 +155,9 @@ class _MyHomePageState extends State<MyHomePage> {
       child: RaisedButton(
         shape: RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(18.0),
-          side: BorderSide(color: Colors.grey),
         ),
-        color: Colors.white,
-        hoverColor: Colors.cyan,
+        color:  Color.fromRGBO(50, 9, 43, .80),
+        hoverColor: Color.fromRGBO(50, 9, 43, 100),
         elevation: 5,
         onPressed: () {},
         child: Column(
@@ -166,15 +166,16 @@ class _MyHomePageState extends State<MyHomePage> {
             Expanded(
               flex: 2,
               child: Text(
-                'AR Techo',
+                'AR-Techo',
                 style: TextStyle(
-                    fontSize: 60, fontWeight: FontWeight.bold),
+                    fontSize: 50, fontWeight: FontWeight.bold,
+                color: Colors.white),
               ),
             ),
             Expanded(
               flex: 3,
               child: CircleAvatar(
-                radius: 75,
+                radius: 100,
                 backgroundImage: NetworkImage(
                     'https://static.businessworld.in/article/article_extra_large_image/1494569567_kXXjuG_AR.jpg'),
               ),
@@ -186,7 +187,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 EdgeInsets.only(top: 15.0, left: 15, right: 15),
                 child: Text(
                   'A Mixed Reality (AR+VR) based product to deploy, manage and monitor services like AWS, Docker, Kubernetes, Ceph etc. ec2 instance at any AWS server with some virtual touches. A ceph cluster could be set up using NFC stick over every machine with some taps and virtual touches.. The project was accomplished using Ansible, python, shell scripting.',
-                  style: TextStyle(),
+                  style: TextStyle(color: Colors.white),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -227,12 +228,133 @@ class _MyHomePageState extends State<MyHomePage> {
     ),
     Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Card(
+      child: RaisedButton(
+        shape: RoundedRectangleBorder(
+          borderRadius: new BorderRadius.circular(18.0),
+        ),
+        color:  Color.fromRGBO(50, 9, 43, .80),
+        hoverColor: Color.fromRGBO(50, 9, 43, 100),
         elevation: 5,
-        child: Image(
-          fit: BoxFit.fitHeight,
-          image: NetworkImage(
-              'https://miro.medium.com/proxy/0*HICLyAdNSIyT0ODU.jpg'),
+        onPressed: () {},
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Expanded(
+              flex: 2,
+              child: Text(
+                'OPEN Mobile',
+                style: TextStyle(
+                    fontSize: 50, fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+            ),
+            Expanded(
+              flex: 3,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image(image: AssetImage('images/logomain.png')),
+              ),
+            ),
+            Expanded(
+              flex: 3,
+              child: Padding(
+                padding:
+                EdgeInsets.only(top: 15.0, left: 15, right: 15),
+                child: Text(
+                  'Official community app for the OPEN-UPES.',
+                  style: TextStyle(color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 10.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    FlatButton(
+                      onPressed: () {
+                        _launchURL(
+                            'https://github.com/upes-open/Open-Mobile');
+                      },
+                      child: Image(
+                        image: AssetImage('images/github.png'),
+                        height: 27,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ),
+    Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: RaisedButton(
+        shape: RoundedRectangleBorder(
+          borderRadius: new BorderRadius.circular(18.0),
+        ),
+        color:  Color.fromRGBO(50, 9, 43, .80),
+        hoverColor: Color.fromRGBO(50, 9, 43, 100),
+        elevation: 5,
+        onPressed: () {},
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Expanded(
+              flex: 2,
+              child: Text(
+                'Prison-I',
+                style: TextStyle(
+                    fontSize: 50, fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+            ),
+            Expanded(
+              flex: 3,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image(image: NetworkImage('https://raw.githubusercontent.com/akash2237778/Prison-I/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png')),
+              ),
+            ),
+            Expanded(
+              flex: 3,
+              child: Padding(
+                padding:
+                EdgeInsets.only(top: 15.0, left: 15, right: 15),
+                child: Text(
+                  'Android wear-based prisoner monitoring system. In this project, Android is used to track and monitor activities of prisoners and send all data to jailor’s android device.  Proximity sensor is used to ensure it\'s on the hand of the prisoner as soon as anyone tries to remove the device it will send an alert to the jailor.',
+                  style: TextStyle(color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 10.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    FlatButton(
+                      onPressed: () {
+                        _launchURL(
+                            'https://github.com/akash2237778/Prison-I');
+                      },
+                      child: Image(
+                        image: AssetImage('images/github.png'),
+                        height: 27,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     ),
@@ -363,283 +485,62 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
         ),
-        SliverGrid(
-          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: MediaQuery.of(context).size.width < 1400
-                ? (MediaQuery.of(context).size.width < 975
-                    ? MediaQuery.of(context).size.width
-                    : MediaQuery.of(context).size.width / 2)
-                : MediaQuery.of(context).size.width / 4,
-            mainAxisSpacing: 5.0,
-            crossAxisSpacing: 5.0,
-          ),
+        SliverList(
           delegate: SliverChildListDelegate(
             [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(18.0),
-                    side: BorderSide(color: Colors.grey),
+              Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage('https://miro.medium.com/max/3622/1*RoXcbaF9lIqwpMjiXg54Vw.png'),
+                    fit: BoxFit.cover,
                   ),
-                  color: Colors.white,
-                  hoverColor: Colors.cyan,
-                  elevation: 5,
-                  onPressed: () {},
+                ),
+                height: MediaQuery.of(context).size.height,
+                child: Padding(
+                  padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.1),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Expanded(
-                        flex: 2,
-                        child: Text(
-                          'AR Book',
-                          style: TextStyle(
-                              fontSize: 60, fontWeight: FontWeight.bold),
+                      Padding(
+                        padding: EdgeInsets.only(bottom: 30.0),
+                        child: Text('Projects',
+                        style: TextStyle(
+                          color: Colors.black,
+                          decoration: TextDecoration.none
+                        ),
                         ),
                       ),
-                      Expanded(
-                          flex: 3,
-                          child: Image.network(
-                              'https://cdn3.iconfinder.com/data/icons/augmented-reality/100/augmented_reality_ar_virtual-05-512.png')),
-                      Expanded(
-                        flex: 3,
-                        child: Padding(
-                          padding:
-                              EdgeInsets.only(top: 15.0, left: 15, right: 15),
-                          child: Text(
-                            'The sole purpose of this project was to make an Augmented Reality based education system. In this book, 3-D models appear to facilitate a better understanding. Among the most significant trends in EdTech, augmented reality rightfully takes a leading position. With more than 1 billion users expected to join the trend by 2020, it opens a pool of opportunities for educational institutions and businesses.',
-                            style: TextStyle(),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.only(bottom: 10.0),
-                              child: RaisedButton(
-                                  onPressed: () {
-                                    _launchURL(
-                                        'https://drive.google.com/file/d/14zEUUDlX2sxQngVOWlab_-qy7gidpV-1/view?pli=1');
-                                  },
-                                  color: Colors.black,
-                                  elevation: 5,
-                                  child: Text(
-                                    'Demo Video',
-                                    style: TextStyle(color: Colors.white),
-                                  )),
-                            )
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(18.0),
-                    side: BorderSide(color: Colors.grey),
-                  ),
-                  color: Colors.white,
-                  hoverColor: Colors.cyan,
-                  elevation: 5,
-                  onPressed: () {},
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Expanded(
-                        flex: 2,
-                        child: Text(
-                          'SahYog',
-                          style: TextStyle(
-                              fontSize: 60, fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Expanded(
-                          flex: 3,
-                          child: Image.network(
-                              'https://static.wixstatic.com/media/5963f2_a8f7ec5ea49f4d2f8289ab1fd7d90380~mv2.png/v1/fill/w_99,h_98,al_c,q_85,usm_0.66_1.00_0.01/logocircle.webp')),
-                      Expanded(
-                        flex: 3,
-                        child: Padding(
-                          padding:
-                              EdgeInsets.only(top: 15.0, left: 15, right: 15),
-                          child: Text(
-                            'This is an android platform where any verified user can provide or receive any service to make money or to get his/her job done without the involvement of any organization. Platform focuses on creating a self helping culture which can benefit both consumers and providers. A service consumer can act as client for service provider',
-                            style: TextStyle(),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Padding(
-                          padding: const EdgeInsets.only(bottom: 10.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              FlatButton(
-                                onPressed: () {
-                                  _launchURL(
-                                      'https://sahayog7778.wixsite.com/sahyog');
-                                },
-                                child: Icon(Icons.language),
-                              ),
-                              FlatButton(
-                                onPressed: () {
-                                  _launchURL(
-                                      'https://github.com/akash2237778/SahYog');
-                                },
-                                child: Image(
-                                  image: AssetImage('images/github.png'),
-                                  height: 27,
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(18.0),
-                    side: BorderSide(color: Colors.grey),
-                  ),
-                  color: Colors.white,
-                  hoverColor: Colors.cyan,
-                  elevation: 5,
-                  onPressed: () {},
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Expanded(
-                        flex: 2,
-                        child: Text(
-                          'AR Techo',
-                          style: TextStyle(
-                              fontSize: 60, fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Expanded(
-                        flex: 3,
-                        child: CircleAvatar(
-                          radius: 75,
-                          backgroundImage: NetworkImage(
-                              'https://static.businessworld.in/article/article_extra_large_image/1494569567_kXXjuG_AR.jpg'),
-                        ),
-                      ),
-                      Expanded(
-                        flex: 3,
-                        child: Padding(
-                          padding:
-                              EdgeInsets.only(top: 15.0, left: 15, right: 15),
-                          child: Text(
-                            'A Mixed Reality (AR+VR) based product to deploy, manage and monitor services like AWS, Docker, Kubernetes, Ceph etc. ec2 instance at any AWS server with some virtual touches. A ceph cluster could be set up using NFC stick over every machine with some taps and virtual touches.. The project was accomplished using Ansible, python, shell scripting.',
-                            style: TextStyle(),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Padding(
-                          padding: const EdgeInsets.only(bottom: 10.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              FlatButton(
-                                  onPressed: () {
-                                    _launchURL(
-                                        'https://www.instagram.com/_ar_techo/');
-                                  },
-                                  child: Image(
-                                    image: AssetImage('images/instagram.png'),
-                                    height: 27,
-                                  )),
-                              FlatButton(
-                                onPressed: () {
-                                  _launchURL(
-                                      'https://github.com/akash2237778/AR');
-                                },
-                                child: Image(
-                                  image: AssetImage('images/github.png'),
-                                  height: 27,
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Card(
-                  elevation: 5,
-                  child: Image(
-                    fit: BoxFit.fitHeight,
-                    image: NetworkImage(
-                        'https://miro.medium.com/proxy/0*HICLyAdNSIyT0ODU.jpg'),
-                  ),
-                ),
-              ),
-              Carousel(
-                images: [
-                  Image(
-                    image: NetworkImage('https://www.upesopen.org/b.png'),
-                    fit: BoxFit.fill,
-                  ),
-                  NetworkImage('https://www.upesopen.org/b.png'),
-                  NetworkImage('https://www.upesopen.org/b.png'),
-                  NetworkImage('https://www.upesopen.org/b.png'),
-                  // ExactAssetImage("assets/images/LaunchImage.jpg")
-                ],
-                dotSize: 4.0,
-                dotSpacing: 15.0,
-                dotColor: Colors.lightGreenAccent,
-                indicatorBgPadding: 5.0,
-                dotBgColor: Colors.purple.withOpacity(0.0),
-                borderRadius: true,
-                moveIndicatorFromBottom: 180.0,
-                noRadiusForIndicator: true,
-              ),
-              CarouselSlider(
-                autoPlay: true,
-                autoPlayInterval: Duration(seconds: 3),
-                autoPlayAnimationDuration: Duration(milliseconds: 800),
-                autoPlayCurve: Curves.fastOutSlowIn,
-                pauseAutoPlayOnTouch: Duration(seconds: 10),
-               // aspectRatio: 2.0,
-                onPageChanged: (index) {
-                  setState(() {
-                    _currentIndex = index;
-                  });
-                },
-                items: cardList.map((card){
-                  return Builder(
-                      builder:(BuildContext context){
-                        return Container(
-                          height: MediaQuery.of(context).size.height,
-                          width: MediaQuery.of(context).size.width,
-                          child: card,
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width > 900? MediaQuery.of(context).size.width*0.2 : MediaQuery.of(context).size.width*0.10),
+                        child: CarouselSlider(
+                          height: MediaQuery.of(context).size.height*0.7,
+                          autoPlay: true,
+                          autoPlayInterval: Duration(seconds: 4),
+                          autoPlayAnimationDuration: Duration(milliseconds: 800),
+                          autoPlayCurve: Curves.fastOutSlowIn,
+                          pauseAutoPlayOnTouch: Duration(seconds: 20),
+                         // aspectRatio: 2.0,
+                          onPageChanged: (index) {
+                            setState(() {
+                              _currentIndex = index;
+                            });
+                          },
+                          items: cardList.map((card){
+                            return Builder(
+                                builder:(BuildContext context){
+                                  return Container(
+                                    //height: MediaQuery.of(context).size.height*0.50,
+                                  //  width: MediaQuery.of(context).size.width*0.50,
+                                    child: card,
 
-                        );
-                      }
-                  );
-                }).toList(),
+                                  );
+                                }
+                            );
+                          }).toList(),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
 
             ],

@@ -1,3 +1,4 @@
+import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -5,6 +6,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:parallax_image/parallax_image.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -12,16 +14,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-  int _currentIndex=0;
-  List cardList=[
+  int _currentIndex = 0;
+  List cardList = [
     Padding(
       padding: const EdgeInsets.all(8.0),
       child: RaisedButton(
         shape: RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(18.0),
         ),
-        color:  Color.fromRGBO(50, 9, 43, .80),
+        color: Color.fromRGBO(50, 9, 43, .80),
         hoverColor: Color.fromRGBO(50, 9, 43, 100),
         elevation: 5,
         onPressed: () {},
@@ -33,19 +34,20 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 'AR Book',
                 style: TextStyle(
-                    fontSize: 50, fontWeight: FontWeight.bold,
-                color: Colors.white),
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
               ),
             ),
             Expanded(
                 flex: 3,
                 child: Image.network(
-                    'https://cdn3.iconfinder.com/data/icons/augmented-reality/100/augmented_reality_ar_virtual-05-512.png',)),
+                  'https://cdn3.iconfinder.com/data/icons/augmented-reality/100/augmented_reality_ar_virtual-05-512.png',
+                )),
             Expanded(
               flex: 3,
               child: Padding(
-                padding:
-                EdgeInsets.only(top: 15.0, left: 15, right: 15),
+                padding: EdgeInsets.only(top: 15.0, left: 15, right: 15),
                 child: Text(
                   'The sole purpose of this project was to make an Augmented Reality based education system. In this book, 3-D models appear to facilitate a better understanding. Among the most significant trends in EdTech, augmented reality rightfully takes a leading position. With more than 1 billion users expected to join the trend by 2020, it opens a pool of opportunities for educational institutions and businesses.',
                   style: TextStyle(color: Colors.white),
@@ -85,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
         shape: RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(18.0),
         ),
-        color:  Color.fromRGBO(50, 9, 43, .80),
+        color: Color.fromRGBO(50, 9, 43, .80),
         hoverColor: Color.fromRGBO(50, 9, 43, 100),
         elevation: 5,
         onPressed: () {},
@@ -97,8 +99,9 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 'SahYog',
                 style: TextStyle(
-                    fontSize: 50, fontWeight: FontWeight.bold,
-                color: Colors.white),
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
               ),
             ),
             Expanded(
@@ -108,8 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Expanded(
               flex: 3,
               child: Padding(
-                padding:
-                EdgeInsets.only(top: 15.0, left: 15, right: 15),
+                padding: EdgeInsets.only(top: 15.0, left: 15, right: 15),
                 child: Text(
                   'This is an android platform where any verified user can provide or receive any service to make money or to get his/her job done without the involvement of any organization. Platform focuses on creating a self helping culture which can benefit both consumers and providers. A service consumer can act as client for service provider',
                   style: TextStyle(color: Colors.white),
@@ -126,16 +128,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     FlatButton(
                       onPressed: () {
-                        _launchURL(
-                            'https://sahayog7778.wixsite.com/sahyog');
+                        _launchURL('https://sahayog7778.wixsite.com/sahyog');
                       },
-                      child: Icon(Icons.language,
-                      color: Colors.white,),
+                      child: Icon(
+                        Icons.language,
+                        color: Colors.white,
+                      ),
                     ),
                     FlatButton(
                       onPressed: () {
-                        _launchURL(
-                            'https://github.com/akash2237778/SahYog');
+                        _launchURL('https://github.com/akash2237778/SahYog');
                       },
                       child: Image(
                         image: AssetImage('images/github.png'),
@@ -156,7 +158,7 @@ class _MyHomePageState extends State<MyHomePage> {
         shape: RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(18.0),
         ),
-        color:  Color.fromRGBO(50, 9, 43, .80),
+        color: Color.fromRGBO(50, 9, 43, .80),
         hoverColor: Color.fromRGBO(50, 9, 43, 100),
         elevation: 5,
         onPressed: () {},
@@ -168,8 +170,9 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 'AR-Techo',
                 style: TextStyle(
-                    fontSize: 50, fontWeight: FontWeight.bold,
-                color: Colors.white),
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
               ),
             ),
             Expanded(
@@ -183,8 +186,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Expanded(
               flex: 3,
               child: Padding(
-                padding:
-                EdgeInsets.only(top: 15.0, left: 15, right: 15),
+                padding: EdgeInsets.only(top: 15.0, left: 15, right: 15),
                 child: Text(
                   'A Mixed Reality (AR+VR) based product to deploy, manage and monitor services like AWS, Docker, Kubernetes, Ceph etc. ec2 instance at any AWS server with some virtual touches. A ceph cluster could be set up using NFC stick over every machine with some taps and virtual touches.. The project was accomplished using Ansible, python, shell scripting.',
                   style: TextStyle(color: Colors.white),
@@ -201,8 +203,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     FlatButton(
                         onPressed: () {
-                          _launchURL(
-                              'https://www.instagram.com/_ar_techo/');
+                          _launchURL('https://www.instagram.com/_ar_techo/');
                         },
                         child: Image(
                           image: AssetImage('images/instagram.png'),
@@ -210,8 +211,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         )),
                     FlatButton(
                       onPressed: () {
-                        _launchURL(
-                            'https://github.com/akash2237778/AR');
+                        _launchURL('https://github.com/akash2237778/AR');
                       },
                       child: Image(
                         image: AssetImage('images/github.png'),
@@ -232,7 +232,7 @@ class _MyHomePageState extends State<MyHomePage> {
         shape: RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(18.0),
         ),
-        color:  Color.fromRGBO(50, 9, 43, .80),
+        color: Color.fromRGBO(50, 9, 43, .80),
         hoverColor: Color.fromRGBO(50, 9, 43, 100),
         elevation: 5,
         onPressed: () {},
@@ -244,7 +244,8 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 'OPEN Mobile',
                 style: TextStyle(
-                    fontSize: 50, fontWeight: FontWeight.bold,
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
             ),
@@ -258,8 +259,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Expanded(
               flex: 3,
               child: Padding(
-                padding:
-                EdgeInsets.only(top: 15.0, left: 15, right: 15),
+                padding: EdgeInsets.only(top: 15.0, left: 15, right: 15),
                 child: Text(
                   'Official community app for the OPEN-UPES.',
                   style: TextStyle(color: Colors.white),
@@ -276,8 +276,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     FlatButton(
                       onPressed: () {
-                        _launchURL(
-                            'https://github.com/upes-open/Open-Mobile');
+                        _launchURL('https://github.com/upes-open/Open-Mobile');
                       },
                       child: Image(
                         image: AssetImage('images/github.png'),
@@ -298,7 +297,7 @@ class _MyHomePageState extends State<MyHomePage> {
         shape: RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(18.0),
         ),
-        color:  Color.fromRGBO(50, 9, 43, .80),
+        color: Color.fromRGBO(50, 9, 43, .80),
         hoverColor: Color.fromRGBO(50, 9, 43, 100),
         elevation: 5,
         onPressed: () {},
@@ -310,7 +309,8 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 'Prison-I',
                 style: TextStyle(
-                    fontSize: 50, fontWeight: FontWeight.bold,
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
             ),
@@ -318,14 +318,15 @@ class _MyHomePageState extends State<MyHomePage> {
               flex: 3,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Image(image: NetworkImage('https://raw.githubusercontent.com/akash2237778/Prison-I/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png')),
+                child: Image(
+                    image: NetworkImage(
+                        'https://raw.githubusercontent.com/akash2237778/Prison-I/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png')),
               ),
             ),
             Expanded(
               flex: 3,
               child: Padding(
-                padding:
-                EdgeInsets.only(top: 15.0, left: 15, right: 15),
+                padding: EdgeInsets.only(top: 15.0, left: 15, right: 15),
                 child: Text(
                   'Android wear-based prisoner monitoring system. In this project, Android is used to track and monitor activities of prisoners and send all data to jailor’s android device.  Proximity sensor is used to ensure it\'s on the hand of the prisoner as soon as anyone tries to remove the device it will send an alert to the jailor.',
                   style: TextStyle(color: Colors.white),
@@ -342,8 +343,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     FlatButton(
                       onPressed: () {
-                        _launchURL(
-                            'https://github.com/akash2237778/Prison-I');
+                        _launchURL('https://github.com/akash2237778/Prison-I');
                       },
                       child: Image(
                         image: AssetImage('images/github.png'),
@@ -359,6 +359,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     ),
   ];
+
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -489,52 +492,72 @@ class _MyHomePageState extends State<MyHomePage> {
           delegate: SliverChildListDelegate(
             [
               Container(
+                height: MediaQuery.of(context).size.height,
+                child: SafeArea(
+                  child: Scaffold(
+                    body: Container(
+                      width: MediaQuery.of(context).size.width,
+
+                      child: FlareActor("assets/intro.flr",
+                        alignment: Alignment.center,
+                        fit: BoxFit.fitWidth,
+                        isPaused: false,
+                        animation: 'coding',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Container(
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage('https://miro.medium.com/max/3622/1*RoXcbaF9lIqwpMjiXg54Vw.png'),
+                    image: NetworkImage(
+                        'https://miro.medium.com/max/3622/1*RoXcbaF9lIqwpMjiXg54Vw.png'),
                     fit: BoxFit.cover,
                   ),
                 ),
                 height: MediaQuery.of(context).size.height,
                 child: Padding(
-                  padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.1),
+                  padding: EdgeInsets.only(
+                      top: MediaQuery.of(context).size.height * 0.1),
                   child: Column(
                     children: [
                       Padding(
                         padding: EdgeInsets.only(bottom: 30.0),
-                        child: Text('Projects',
-                        style: TextStyle(
-                          color: Colors.black,
-                          decoration: TextDecoration.none
-                        ),
+                        child: Text(
+                          'Projects',
+                          style: TextStyle(
+                              color: Colors.black,
+                              decoration: TextDecoration.none),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width > 900? MediaQuery.of(context).size.width*0.2 : MediaQuery.of(context).size.width*0.10),
+                        padding: EdgeInsets.symmetric(
+                            horizontal: MediaQuery.of(context).size.width > 900
+                                ? MediaQuery.of(context).size.width * 0.2
+                                : MediaQuery.of(context).size.width * 0.10),
                         child: CarouselSlider(
-                          height: MediaQuery.of(context).size.height*0.7,
+                          height: MediaQuery.of(context).size.height * 0.7,
                           autoPlay: true,
                           autoPlayInterval: Duration(seconds: 4),
-                          autoPlayAnimationDuration: Duration(milliseconds: 800),
+                          autoPlayAnimationDuration:
+                              Duration(milliseconds: 800),
                           autoPlayCurve: Curves.fastOutSlowIn,
                           pauseAutoPlayOnTouch: Duration(seconds: 20),
-                         // aspectRatio: 2.0,
+                          // aspectRatio: 2.0,
                           onPageChanged: (index) {
                             setState(() {
                               _currentIndex = index;
                             });
                           },
-                          items: cardList.map((card){
-                            return Builder(
-                                builder:(BuildContext context){
-                                  return Container(
-                                    //height: MediaQuery.of(context).size.height*0.50,
-                                  //  width: MediaQuery.of(context).size.width*0.50,
-                                    child: card,
-
-                                  );
-                                }
-                            );
+                          items: cardList.map((card) {
+                            return Builder(builder: (BuildContext context) {
+                              return Container(
+                                //height: MediaQuery.of(context).size.height*0.50,
+                                //  width: MediaQuery.of(context).size.width*0.50,
+                                child: card,
+                              );
+                            });
                           }).toList(),
                         ),
                       ),
@@ -542,12 +565,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
-
-            ],
+               ],
           ),
-
         ),
-
       ],
     );
   }

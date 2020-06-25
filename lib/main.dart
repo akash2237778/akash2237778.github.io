@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'HomePage.dart';
+import 'package:flare_flutter/flare_controller.dart';
+import 'package:flare_flutter/flare.dart';
+import 'package:flare_flutter/flare_actor.dart';
 
 void main() {
   runApp(MyApp());

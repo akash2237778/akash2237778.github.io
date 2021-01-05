@@ -24,9 +24,9 @@ const RESOURCES = {
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/packages/flutter_markdown/assets/logo.png": "67642a0b80f3d50277c44cde8f450e50",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
-"index.html": "d2e9ed3a0fa51a294477df7ec15c8120",
-"/": "d2e9ed3a0fa51a294477df7ec15c8120",
-"main.dart.js": "0882b36e8d4d4ae905f63f4daae27d63",
+"index.html": "6fcd53efd5676266a2cde5192b7cf03e",
+"/": "6fcd53efd5676266a2cde5192b7cf03e",
+"main.dart.js": "04d5448fbcfbc43b2450abda7319ae1d",
 "version.json": "561ca9b7b22a52d8226ce87ce5bd0bc0"
 };
 
